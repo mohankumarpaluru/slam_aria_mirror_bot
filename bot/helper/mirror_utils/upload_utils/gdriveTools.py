@@ -117,7 +117,7 @@ class GoogleDriveHelper:
                                      resumable=False)
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using AT_BOTs Mirrorbot',
+            'description': 'Uploaded using trixter127 Mirrorbot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -171,7 +171,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using AT_BOTs Mirrorbot',
+            'description': 'Uploaded using trixter127 Mirrorbot',
             'mimeType': mime_type,
         }
         try:
@@ -380,7 +380,7 @@ class GoogleDriveHelper:
                     return "your clone has been stopped and cloned data has been deleted!", "cancelled"
                 msg += f'<b>☞ 📂Filename : </b><code>{meta.get("name")}</code>\n<b>Size: </b><code>{get_readable_file_size(self.transferred_size)}</code>'
                 msg += f'\n<b>☞ 🌀Type : </b><code>Folder</code>'
-                msg += f'\n<b>☞ Powerd by : @AT_BOTs</b>'
+                msg += f'\n<b>☞ Powerd by : @trixter127</b>'
                 buttons = button_build.ButtonMaker()
                 if SHORTENER is not None and SHORTENER_API is not None:
                     surl = requests.get(f'https://{SHORTENER}/api?api={SHORTENER_API}&url={durl}&format=text').text
@@ -417,7 +417,7 @@ class GoogleDriveHelper:
                     typeee = 'File' 
                 try:
                     msg += f'\n<b>☞ 📦Size : </b><code>{get_readable_file_size(int(meta.get("size")))}</code>'
-                    msg += f'\n<b>☞ 🗳Powerd by : @AT_BOTS</b> '
+                    msg += f'\n<b>☞ 🗳Powerd by : @trixter127</b> '
                 except TypeError:
                     pass
                 if INDEX_URL is not None:
@@ -556,9 +556,9 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'AT_BOTs Mirror bot search',
-                                 author_name='AT_BOTs',
-                                 author_url='https://t.me/AT_BOTs',
+                                 title = 'trixter127 Mirror bot search',
+                                 author_name='trixter127',
+                                 author_url='https://t.me/trixter127',
                                  html_content=content)
         return
 
@@ -641,9 +641,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'AT_BOTs Mirror bot search',
-                                                        author_name='AT_BOTs Mirrorbot',
-                                                        author_url='https://t.me/AT_BOTs',
+                                                        title = 'trixter127 Mirror bot search',
+                                                        author_name='trixter127 Mirrorbot',
+                                                        author_url='https://t.me/trixter127',
                                                         html_content=content
                                                         )['path'])
 
@@ -678,7 +678,7 @@ class GoogleDriveHelper:
                 msg += f'<b>☞ 📂Filename : </b><code>{name}</code>'
                 msg += f'\n<b>☞ 📦Size : </b><code>{get_readable_file_size(self.total_bytes)}</code>'
                 msg += f'\n<b>☞ 🌀Type : </b><code>Folder</code>'
-                msg += f'\n<b>☞ 🗳Powered by : @AT_BOTs</b>'
+                msg += f'\n<b>☞ 🗳Owner : @trixter127</b>'
             else:
                 msg += f'<b>☞ 📂Filename : </b><code>{name}</code>'
                 try:
@@ -690,7 +690,7 @@ class GoogleDriveHelper:
                     self.gDrive_file(**drive_file)
                     msg += f'\n<b>☞ 📦Size : </b><code>{get_readable_file_size(self.total_bytes)}</code>'
                     msg += f'\n<b>☞ 🌀Type : </b><code>{typee}</code>'
-                    msg += f'\n<b>☞ 🗳Powered by : @AT_BOTs</b>'
+                    msg += f'\n<b>☞ 🗳Owner : @trixter127</b>'
                 except TypeError:
                     pass
         except Exception as err:

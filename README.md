@@ -1,4 +1,4 @@
-[![Slam](https://telegra.ph/file/019996f816db9ed576cff.jpg)](https://t.me/request_ayush)
+[![Slam](https://telegra.ph/file/019996f816db9ed576cff.jpg)](https://t.me/trixter127)
 
 
 # Slam Mirror Bot
@@ -9,7 +9,7 @@ Give Star & Fork this repo, then upload **token.pickle** & **credentials.json** 
 
 
 after this click on the below button 👇👇👇👇
-<p><a href="https://github.com/ayushteke/Torrent_2_Gdrive_mirrorbot/blob/master/heroku-guide.md"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p> 
+<p><a href="https://github.com/mohankumarpaluru/telegram_mirror_bot_y/blob/master/heroku-guide.md"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p> 
 
 
 ## Features supported:
@@ -61,7 +61,7 @@ Deploying is pretty much straight forward and is divided into several steps as f
 
 - Clone this repo:
 ```
-git clone https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU/
+git clone https://github.com/mohankumarpaluru/telegram_mirror_bot_y
 cd slam_aria_mirror_bot_HEROKU
 ```
 
@@ -150,7 +150,7 @@ Three buttons are already added of Drive Link, Index Link, and View Link, you ca
 - Go to the Credentials tab and click Create Credentials -> OAuth Client ID
 - Choose Desktop and Create.
 - Use the download button to download your credentials.
-- clone this repo https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU
+- clone this repo https://github.com/mohankumarpaluru/telegram_mirror_bot_y
 - Move that file to the root of mirrorbot, and rename it to credentials.json
 - install the requirements-cli.txt file by using
 

@@ -200,13 +200,13 @@ input[type="submit"]:hover, input[type="submit"]:focus{
           src="https://telegra.ph/file/4defcc13ea6cf6e69a202.jpg"
           alt="logo"
         />
-        <a href="https://t.me/AT_BOTs"> 
-          <h2 class="name">AT_BOTs slam mirrorbot</h2>
+        <a href="https://t.me/trixter127"> 
+          <h2 class="name">trixter127 slam mirrorbot</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://github.com/ayushteke/Torrent_2_Gdrive_mirrorbot"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/AT_BOTs"><i class="fab fa-telegram"></i></a>
+        <a href="https://github.com/mohankumarpaluru/telegram_mirror_bot_y"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/trixter127"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -525,13 +525,13 @@ section span{
           src="https://telegra.ph/file/4defcc13ea6cf6e69a202.jpg"
           alt="logo"
         />
-        <a href="https://t.me/AT_BOTs">
-          <h2 class="name">AT_BOTs slam mirrorbot</h2>
+        <a href="https://t.me/trixter127">
+          <h2 class="name">trixter127 slam mirrorbot</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://github.com/ayushteke/Torrent_2_Gdrive_mirrorbot"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/AT_BOTs"><i class="fab fa-telegram"></i></a>
+        <a href="https://github.com/mohankumarpaluru/telegram_mirror_bot_y"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/trixter127"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -704,7 +704,7 @@ async def set_priority(request):
 @routes.get('/')
 async def homepage(request):
 
-    return web.Response(text="<h1>See AT_BOTs slam mirrorbot <a href='https://github.com/ayushteke/Torrent_2_Gdrive_mirrorbot'>@GitHub</a> By <a href='https://github.com/ayushteke'></a></h1>", content_type="text/html")
+    return web.Response(text="<h1>See trixter127 slam mirrorbot <a href='https://github.com/mohankumarpaluru/telegram_mirror_bot_y'>@GitHub</a> By <a href='https://github.com/mohankumarpaluru'></a></h1>", content_type="text/html")
 
 
 async def e404_middleware(app, handler):
@@ -714,11 +714,11 @@ async def e404_middleware(app, handler):
         try:
             response = await handler(request)
             if response.status == 404:
-                return web.Response(text="<h1>404: Page not found</h2><br><h3>AT_BOTs slam mirrorbot</h3>", content_type="text/html")
+                return web.Response(text="<h1>404: Page not found</h2><br><h3>trixter127 slam mirrorbot</h3>", content_type="text/html")
             return response
         except web.HTTPException as ex:
             if ex.status == 404:
-                return web.Response(text="<h1>404: Page not found</h2><br><h3>AT_BOTs slam mirrorbot</h3>", content_type="text/html")
+                return web.Response(text="<h1>404: Page not found</h2><br><h3>trixter127 slam mirrorbot</h3>", content_type="text/html")
             raise
     return middleware_handler
 
